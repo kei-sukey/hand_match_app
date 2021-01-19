@@ -118,6 +118,11 @@ a {
   cursor: pointer;
 }
 
+.input-birth-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* メイン */
 
 .greeting{
