@@ -5,14 +5,16 @@
         <%= "こんにちは! " %>
         <%= link_to "#{current_user.nickname}さん", root_path, class: :greeting__link %>
       </div>
+    <% end %>
 
+    <% if @items.present? %>
       <div class="title">
         <%= "Random Pickup!" %>
       </div>
-
+      <div class="card__wrapper">
+        <%= render partial: "item", collection: @items %>
+      </div>
     <% end %>
-    <div class="card__wrapper">
-      <%= render partial: "item", collection: @items %>
-    </div>
+
   </div>
 </main>
