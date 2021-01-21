@@ -4,6 +4,7 @@ class ItemsController < ApplicationController
 
   def index
     @items = Item.find(Item.pluck(:id).shuffle[0..2])
+    @categories = Category.where(id: 1..12).order("id ASC")
   end
 
   def new
