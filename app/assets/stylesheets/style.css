@@ -210,6 +210,14 @@ a {
   font-size: 20px;
   font-weight: bold;
 }
+.detail__message{
+  width: 80%;
+  margin: 5px 200px;
+  padding: 5px 10px;
+  align-items: left;
+  border-top: 1px #eee solid;
+  border-bottom: 1px #eee solid;
+}
 .item__manage{
   display: flex;
   justify-content: center;
@@ -273,23 +281,69 @@ a {
 
 .item__comments{
   background-color: #f6f6f6;
-  padding: 20px;
-  margin: 28px 0 40px 0;
+  width: 100%;
+  padding: 10px 20px 20px 20px;
+  margin: 20px 0 40px 0;
+  text-align: center;
 }
-
+.comment_text {
+  width: 80%;
+  min-width: 250px;
+  height: 100px;
+  margin-top: 10px;
+  padding: 10px;
+  border: solid 2px #dedede;
+  resize: none;
+}
+.comment-warn {
+  padding: 10px;
+  font-size: 11px;
+  margin: 10px 0px;
+}
+.comment_btn {
+  width: 30%;
+  min-width: 150px;
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 0.8em;
+  color: #fff;
+  text-decoration: none;
+  user-select: none;
+  background: #87CEFA;
+  border: 1px #87CEFA solid;
+  border-radius: 100px;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+  transition: 0.2s ease;
+}
+.comment_btn:hover{
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+.comment_title{
+  font-size: 20px;
+  font-weight: bold;
+}
 .comments_lists{
-  padding-left: 20px;
+  background-color: #f7fafc;
+  width: 100%;
+  margin-top: 10px;
+  padding-left: 40px;
+  border-radius :8px;
+  box-shadow :0px 0px 5px silver;
 }
-
 .comments_list{
-  list-style-type: square;
+  width: 95%;
   padding-bottom: 5px;
+  text-align: left;
+  list-style-type: disc;
+  word-wrap: break-word;
+  border-bottom: 1px #eee solid;
 }
-
 .comment_user{
   font-size: 16px;
   color: #999;
   text-decoration: underline;
+  margin-left: 10px;
 }
 
 /* ユーザーページ */
