@@ -32,7 +32,7 @@
             <%= link_to "編集する", edit_item_path, class: :item__btn %>
             <%= link_to "削除する", item_path(@item.id), method: :delete, class: :item__btn %>
           </div>
-        <% else %>
+        <% elsif  user_signed_in? && current_user.id != @item.user_id %>
           <div class="item__manage">
             <%= link_to '購入する', root_path ,class: :item__btn %>
           </div>
@@ -44,7 +44,7 @@
             <tbody>
               <tr>
                 <th class="detail-item">出品者</th>
-                <td class="detail-value"><%= link_to "#{@item.user.nickname}", root_path, class: :item__user %></td>
+                <td class="detail-value"><%= link_to "#{@item.user.nickname}", user_path(@item.user.id), class: :item__user %></td>
               </tr>
               <tr>
                 <th class="detail-item">カテゴリー</th>
