@@ -178,6 +178,11 @@ a {
   text-decoration: underline;
 }
 
+/* カテゴリマッチページ */
+.match__item {
+  width: 300%;
+ }
+
 /* 詳細ページ */
 .item__wrapper{
   min-height: calc(100vh - 161px);
