@@ -1,0 +1,94 @@
+<main class="main">
+  <div class="inner">
+    <div class="item__wrapper">
+      <p class="item__hedding">
+        <%= @item.name %>
+      </p>
+
+      <div class="item__image">
+        <%= image_tag @item.image %>
+      </div>
+
+      <div class="item__body">
+        <div class="item__detail">
+          <p class="detail__title">価格</p>
+          <p class="detail__message">
+            <%= "¥ #{@item.price}" %>
+          </p>
+          <p class="detail__message">
+            <%= @item.delivery_charge.name %>
+          </p>
+        </div>
+
+        <div class="item__detail">
+          <p class="detail__title">作品紹介</p>
+          <p class="detail__message">
+            <%= @item.explanation %>
+          </p>
+        </div>
+
+        <% if user_signed_in? && current_user.id == @item.user_id %>
+          <div class="item__manage">
+            <%= link_to "編集する", root_path, class: :item__btn %>
+            <%= link_to "削除する", root_path, method: :delete, class: :item__btn %>
+          </div>
+        <% else %>
+          <div class="item__manage">
+            <%= link_to '購入する', root_path ,class: :item__btn %>
+          </div>
+        <% end %>
+
+        <div class="item__detail">
+          <p class="detail__title">作品情報</p>
+          <table class="detail-table">
+            <tbody>
+              <tr>
+                <th class="detail-item">出品者</th>
+                <td class="detail-value"><%= link_to "#{@item.user.nickname}", root_path, class: :item__user %></td>
+              </tr>
+              <tr>
+                <th class="detail-item">カテゴリー</th>
+                <td class="detail-value"><%= @item.category.name %></td>
+              </tr>
+              <tr>
+                <th class="detail-item">色</th>
+                <td class="detail-value"><%= @item.color.name %></td>
+              </tr>
+              <tr>
+                <th class="detail-item">素材</th>
+                <td class="detail-value"><%= @item.material.name %></td>
+              </tr>
+              <tr>
+                <th class="detail-item">商品の状態</th>
+                <td class="detail-value"><%= @item.color.name %></td>
+              </tr>
+              <tr>
+                <th class="detail-item">サイズ</th>
+                <td class="detail-value"><%= @item.size.name %></td>
+              </tr>
+              <tr>
+                <th class="detail-item">配送料の負担</th>
+                <td class="detail-value"><%= @item.delivery_charge.name %></td>
+              </tr>
+              <tr>
+                <th class="detail-item">発送元の地域</th>
+                <td class="detail-value"><%= @item.prefecture.name %></td>
+              </tr>
+              <tr>
+                <th class="detail-item">発送日の目安</th>
+                <td class="detail-value"><%= @item.shipping_day.name %></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="item__detail">
+          <%= link_to '別の作品へ', root_path ,class: :change_item_btn %>
+          <%= link_to "#{@item.category.name}をもっと見る", root_path ,class: :another_item %>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</main>
+
