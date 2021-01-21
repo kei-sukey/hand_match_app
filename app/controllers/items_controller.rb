@@ -3,7 +3,7 @@ class ItemsController < ApplicationController
   before_action :set_item, only: [:show, :edit, :update]
 
   def index
-    @items = Item.order("RAND()").limit(3)
+    @items = Item.find(Item.pluck(:id).shuffle[0..2])
   end
 
   def new
