@@ -17,6 +17,7 @@
 
 - has_many :items
 - has_many :favorites
+- has_many :comments
 - has_many :orders
 
 ## items テーブル
@@ -39,6 +40,7 @@
 
 - belongs_to :user
 - has_many :favorites
+- has_many :comments
 - has_one :order
 
 - belongs_to :category
@@ -48,6 +50,19 @@
 - belongs_to :delivery_charge
 - belongs_to :prefecture
 - belongs_to :shipping_day
+
+## comments テーブル
+
+| Column    | Type       | Options                        |
+| --------- | ---------- | ------------------------------ |
+| text      | text       | null: false                    |
+| user      | references | null: false, foreign_key: true |
+| item      | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :user
+- belongs_to :item
 
 ## favorites テーブル
 

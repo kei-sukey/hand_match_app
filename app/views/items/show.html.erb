@@ -12,10 +12,10 @@
       <div class="item__body">
         <div class="item__detail">
           <p class="detail__title">価格</p>
-          <p class="detail__message">
+          <p class="detail__price">
             <%= "¥ #{@item.price}" %>
           </p>
-          <p class="detail__message">
+          <p class="detail__price">
             <%= @item.delivery_charge.name %>
           </p>
         </div>
@@ -23,7 +23,7 @@
         <div class="item__detail">
           <p class="detail__title">作品紹介</p>
           <p class="detail__message">
-            <%= @item.explanation %>
+            <%=safe_join(@item.explanation.split("\n"),tag(:br))%>
           </p>
         </div>
 
@@ -81,13 +81,51 @@
             </tbody>
           </table>
         </div>
+      </div>
 
-        <div class="item__detail">
-          <%= link_to '別の作品へ', root_path ,class: :change_item_btn %>
-          <%= link_to "#{@item.category.name}をもっと見る", root_path ,class: :another_item %>
+        <div class="item__comments">
+          <% if user_signed_in? %>
+            <%= form_with(model: [@item, @comment], local: true) do |f|%>
+              <div class="field">
+                <%= f.label :text, "コメント投稿" %><br />
+                <%= f.text_area :text, class: :comment_text %>
+              </div>
+              <div>
+                <%= f.submit "送信する", class: :comment_btn %>
+              </div>
+              <div class="comment-warn">
+                <%= "相手のことを考え丁寧なコメントを心がけましょう。" %><br />
+                <%= "不快な言葉遣いなどは利用制限や退会処分となることがあります。" %>
+              </div>
+            <% end %> 
+          <% end %>
+
+          <div class="comment_title">
+            <%= "コメント一覧" %>
+          </div>
+          <% unless user_signed_in? %>
+            <div class="comment-warn">
+              <%= "コメントを投稿するにはログインが必要です。" %>
+            </div>
+          <% end %>
+
+            <ul class="comments_lists">
+              <% if @comments %>
+                <% @comments.each do |comment| %>
+                  <li class="comments_list">
+                    <%=safe_join(comment.text.split("\n"),tag(:br))%>
+                    <%= link_to "by #{comment.user.nickname}", user_path(comment.user_id), class: :comment_user %>
+                  </li>
+                <% end %>
+              <% end %>
+            </ul>
         </div>
 
+      <div class="item__detail">
+        <%= link_to '別の作品へ', root_path ,class: :change_item_btn %>
+        <%= link_to "#{@item.category.name}をもっと見る", root_path ,class: :another_item %>
       </div>
+
     </div>
   </div>
 </main>
