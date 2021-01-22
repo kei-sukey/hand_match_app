@@ -12,9 +12,15 @@
 </br>
 
 # テスト用アカウント
-アカウントニックネーム: テストアカウント </br>
-email: abc@sample.com </br>
+アカウント1 </br>
+ニックネーム: TestTaro </br>
+email: abcde@sample.com </br>
 pass: abc123 </br>
+
+アカウント2 </br>
+アカウントニックネーム: TestHanako </br>
+email: sample@abcde.com </br>
+pass: 123abc </br>
 
 # 利用方法
 ユーザー登録しログインすることで作品を出品することが出来ます。 </br>
