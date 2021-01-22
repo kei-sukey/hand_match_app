@@ -39,37 +39,37 @@ pass: abc123 </br>
 
 # 実装した機能についてのGIFと説明
 - トップページから新規登録画面、ログイン画面への遷移</br>
-  ![GIF](https://gyazo.com/7876c98bafc039b29a59c5f47011f04b)
+[![Image from Gyazo](https://i.gyazo.com/7876c98bafc039b29a59c5f47011f04b.gif)](https://gyazo.com/7876c98bafc039b29a59c5f47011f04b)
 
 - 新規ユーザー登録の挙動</br>
-  ![GIF](https://gyazo.com/92402a9e9f0dcced6f5e408897a5dc50)
+[![Image from Gyazo](https://i.gyazo.com/92402a9e9f0dcced6f5e408897a5dc50.gif)](https://gyazo.com/92402a9e9f0dcced6f5e408897a5dc50)
 
 - ログイン済トップページから新規作品投稿画面への遷移</br>
-  ![GIF](https://gyazo.com/4c85eefdaf26bd7552e111ec641ccc6e)
+[![Image from Gyazo](https://i.gyazo.com/4c85eefdaf26bd7552e111ec641ccc6e.gif)](https://gyazo.com/4c85eefdaf26bd7552e111ec641ccc6e)
 
 - 新規作品投稿の挙動</br>
-  ![GIF](https://gyazo.com/126e7f7040483eb80d1c1b03d443b71e)
+[![Image from Gyazo](https://i.gyazo.com/126e7f7040483eb80d1c1b03d443b71e.gif)](https://gyazo.com/126e7f7040483eb80d1c1b03d443b71e)
 
 - 作品が投稿されたトップページの表示</br>
-  ![GIF](https://gyazo.com/ded85fe0d0bd3a6f16d1fc2e8d88447a)
+[![Image from Gyazo](https://i.gyazo.com/ded85fe0d0bd3a6f16d1fc2e8d88447a.gif)](https://gyazo.com/ded85fe0d0bd3a6f16d1fc2e8d88447a)
 
 - 作品詳細ページ</br>
-  ![GIF](https://gyazo.com/87e4ef34cc2e5dd47ea7e5d1f4d0c13a)
+[![Image from Gyazo](https://i.gyazo.com/87e4ef34cc2e5dd47ea7e5d1f4d0c13a.gif)](https://gyazo.com/87e4ef34cc2e5dd47ea7e5d1f4d0c13a)
 
 - 作品向けコメント投稿機能</br>
-  ![GIF](https://gyazo.com/37eec95db2794870412116b0c6812543)
+[![Image from Gyazo](https://i.gyazo.com/37eec95db2794870412116b0c6812543.gif)](https://gyazo.com/37eec95db2794870412116b0c6812543)
 
 - トップページの作品ランダム3品表示</br>
-  ![GIF](https://gyazo.com/dd0c26944e56ea71a719ade90c890014)
+[![Image from Gyazo](https://i.gyazo.com/dd0c26944e56ea71a719ade90c890014.gif)](https://gyazo.com/dd0c26944e56ea71a719ade90c890014)
 
 - ユーザー詳細ページ</br>
-  ![GIF](https://gyazo.com/34a7b12918c887f4c2c54ec6f5fd59e0)
+[![Image from Gyazo](https://i.gyazo.com/34a7b12918c887f4c2c54ec6f5fd59e0.gif)](https://gyazo.com/34a7b12918c887f4c2c54ec6f5fd59e0)
 
-- カテゴリ選択し作品ランダム表示</br>
-  ![GIF](https://gyazo.com/74999abdd6c1eb1a4e26d476511435ce)
+- カテゴリ選択し作品をランダム表示</br>
+[![Image from Gyazo](https://i.gyazo.com/74999abdd6c1eb1a4e26d476511435ce.gif)](https://gyazo.com/74999abdd6c1eb1a4e26d476511435ce)
 
-- カテゴリ選択し作品ランダム表示から作品詳細ページへ遷移</br>
-  ![GIF](https://gyazo.com/f8e155dd1ba9878122e007d5de0763aa)
+- カテゴリ選択し作品をランダム表示してから作品詳細ページへ遷移</br>
+[![Image from Gyazo](https://i.gyazo.com/f8e155dd1ba9878122e007d5de0763aa.gif)](https://gyazo.com/f8e155dd1ba9878122e007d5de0763aa)
 </br>
 
 # 実装予定の機能
