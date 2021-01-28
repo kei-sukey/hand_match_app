@@ -187,8 +187,39 @@ a {
 
 /* カテゴリマッチページ */
 .match__item {
-  width: 300%;
- }
+  width: 100%;
+}
+
+.categories .card__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 161px);
+}
+.categories .card {
+  width: 50%;
+  margin-bottom: 20px;
+}
+.categories .card__img {
+  margin-bottom: 16px;
+}
+.categories .card__title {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.categories .card__summary {
+  font-size: 16px;
+}
+.categories .card__user {
+  display: block;
+  font-size: 12px;
+  color: #999;
+  text-align: right;
+  text-decoration: underline;
+}
 
 /* 詳細ページ */
 .item__wrapper{
