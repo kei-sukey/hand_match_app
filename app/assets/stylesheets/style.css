@@ -123,6 +123,13 @@ a {
   flex-wrap: wrap;
 }
 
+.prev_img {
+  height: 25%;
+  width: 25%;
+  margin-top: 10px;
+  object-fit: contain;
+}
+
 /* メイン */
 
 .greeting{
