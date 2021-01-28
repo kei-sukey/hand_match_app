@@ -4,11 +4,21 @@
       <%= "Category Match Item" %>
     </div>
 
-    <div class="match__item">
-      <div class="card__wrapper">
-        <%= render partial: "items/item", collection: @items %>
+    <% if @items.present? %>
+      <div class="match__item">
+        <div class="card__wrapper">
+          <%= render partial: "items/item", collection: @items %>
+        </div>
       </div>
-    </div>
+    <% else %>
+      <div class="match__item">
+        <div class="card__wrapper">
+          <div class="match__no__item">
+            <%="このカテゴリには、まだ作品が出品されていません。"%>
+          </div>
+        </div>
+      </div>
+    <% end %>
 
   </div>
 </div>

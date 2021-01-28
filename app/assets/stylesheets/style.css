@@ -226,6 +226,10 @@ a {
   text-decoration: underline;
 }
 
+.match__no__item {
+  font-size: 20px;
+}
+
 /* 詳細ページ */
 .item__wrapper{
   min-height: calc(100vh - 161px);
