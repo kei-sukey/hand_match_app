@@ -3,7 +3,11 @@ class ItemsController < ApplicationController
   before_action :set_item, only: [:show, :edit, :update]
 
   def index
-    @items = Item.find(Item.pluck(:id).shuffle[0..2])
+    if user_signed_in?
+      @items = Item.find(Item.where.not(user_id: current_user.id).pluck(:id).shuffle[0..2])
+    else
+      @items = Item.find(Item.pluck(:id).shuffle[0..2])
+    end
     @categories = Category.where(id: 1..12).order("id ASC")
   end
 
