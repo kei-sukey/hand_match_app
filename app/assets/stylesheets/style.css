@@ -139,6 +139,19 @@ a {
 .greeting__link{
   text-decoration: underline;
 }
+
+.greeting__link{
+  padding: 5px;
+  color: #87CEFA;
+  text-decoration: underline;
+  border-radius: 3px;
+  transition: 0.4s ease;
+}
+.greeting__link:hover{
+  color: #fff;
+  background: #87CEFA;
+}
+
 .title{
   font-size: 25px;
   margin-bottom: 20px;
@@ -186,7 +199,7 @@ a {
 }
 
 .category-cards .card {
-  width: calc((50% - 50px) / 3);
+  width: calc((100% - 50px) / 6);
   margin-bottom: 40px;
 }
 
@@ -429,8 +442,8 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-/* フッター */
 
+/* フッター */
 .footer {
   background-color: #999;
   padding: 10px 0;
@@ -454,8 +467,35 @@ a {
     width: 48%;
     margin-bottom: 40px;
   }
+  .category-cards .card__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 161px);
+  }  
+  .category-cards .card {
+    width: 48%;
+    margin-bottom: 40px;
+  }
+  .categories .card {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  .match__no__item {
+    font-size: 24px;
+  }
   .item_image{
     width: 60%;
+  }
+  .form__text {
+    width: 60%;
+  }
+  .prev_img {
+    height: 50%;
+    width: 50%;
+    margin-top: 10px;
+    object-fit: contain;
   }
 }
 
@@ -477,10 +517,38 @@ a {
   .card__explanation {
     font-size: 14px;
   }
+  .category-cards .card__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 161px);
+  }  
+  .category-cards .card {
+    width: 80%;
+    margin-bottom: 60px;
+  }
+  .categories .card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .match__no__item {
+    font-size: 14px;
+  }
   .item_image{
     width: 100%;
   }
   .table{
     width: 100%;
+  }
+
+  .form__text {
+    width: 95%;
+  }  
+  .prev_img {
+    height: 80%;
+    width: 80%;
+    margin-top: 10px;
+    object-fit: contain;
   }
 }
