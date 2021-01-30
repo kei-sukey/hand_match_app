@@ -88,6 +88,7 @@
             <%= form_with(model: [@item, @comment], local: true) do |f|%>
               <div class="field">
                 <%= f.label :text, "コメント投稿" %><br />
+                <%= render 'shared/error_messages', model: f.object %>
                 <%= f.text_area :text, class: :comment_text %>
               </div>
               <div>
@@ -129,4 +130,3 @@
     </div>
   </div>
 </main>
-
