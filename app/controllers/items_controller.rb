@@ -8,7 +8,7 @@ class ItemsController < ApplicationController
     else
       @items = Item.find(Item.pluck(:id).shuffle[0..2])
     end
-    @categories = Category.where(id: 1..12).order("id ASC")
+    @categories = Category.where(id: 1..12).order('id ASC')
   end
 
   def new
