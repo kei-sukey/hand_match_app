@@ -6,7 +6,7 @@ class CommentsController < ApplicationController
     else
       @item = @comment.item
       @comments = @item.comments
-      render "item/show"
+      render template: "items/show"
     end
   end
 
