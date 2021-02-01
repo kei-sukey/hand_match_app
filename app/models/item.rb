@@ -18,7 +18,7 @@ class Item < ApplicationRecord
     validates :user_id
     validates :image
     with_options numericality: { other_than: 0,
-                                 message: 'Select' } do
+                                 message: 'を選択してください' } do
       validates :category_id
       validates :color_id
       validates :size_id
@@ -28,9 +28,9 @@ class Item < ApplicationRecord
       validates :shipping_day_id
     end
     validates :price, numericality: { only_integer: true,
-                                      message: 'Half-width number' }
+                                      message: 'は半角数字で入力してください' }
   end
   validates :price, numericality: { greater_than_or_equal_to: 300,
                                     less_than_or_equal_to: 9_999_999,
-                                    message: 'Out of setting range' }
+                                    message: 'は¥300〜9,999,999の範囲で設定してください' }
 end

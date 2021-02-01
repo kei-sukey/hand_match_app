@@ -129,6 +129,13 @@ a {
   margin-top: 10px;
   object-fit: contain;
 }
+.error-message {
+  color: red;
+}
+
+.login-flash-message {
+  color: red;
+}
 
 /* メイン */
 
