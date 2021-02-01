@@ -10,17 +10,17 @@ class User < ApplicationRecord
   PASSWORD_REGEX = /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i.freeze
 
   validates :password,        format: { with: PASSWORD_REGEX,
-                                        message: 'Include both letters and numbers' }
+                                        message: 'は半角英字と数字両方を含めて設定してください' }
   with_options presence: true do
     validates :nickname
     validates :last_name, format: { with: /\A[ぁ-んァ-ン一-龥]/,
-                                    message: 'Full-width characters' }
+                                    message: 'は全角で入力して下さい' }
     validates :first_name, format: { with: /\A[ぁ-んァ-ン一-龥]/,
-                                     message: 'Full-width characters' }
+                                     message: 'は全角で入力して下さい' }
     validates :last_kana_name, format: { with: /\A[ァ-ヶー－]+\z/,
-                                         message: 'Full-width katakana characters' }
+                                         message: 'は全角カナで入力して下さい' }
     validates :first_kana_name, format: { with: /\A[ァ-ヶー－]+\z/,
-                                          message: 'Full-width katakana characters' }
+                                          message: 'は全角カナで入力して下さい' }
     validates :birthday
   end
 end
