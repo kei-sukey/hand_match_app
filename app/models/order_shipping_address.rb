@@ -1,6 +1,6 @@
 class OrderShippingAddress
   include ActiveModel::Model
-  attr_accessor :postal_code, :prefecture_id, :city, :block, :building, :telephone_number, :item_id, :user_id
+  attr_accessor :postal_code, :prefecture_id, :city, :block, :building, :telephone_number, :item_id, :user_id, :token
 
   with_options presence: true do
     validates :postal_code, format: { with: /\A\d{3}-\d{4}\z/,
@@ -13,6 +13,7 @@ class OrderShippingAddress
                                            message: '最大11桁の半角数字で入力してください' }
     validates :item_id
     validates :user_id
+    validates :token
   end
 
   def save
