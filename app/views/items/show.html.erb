@@ -27,15 +27,23 @@
           </p>
         </div>
 
-        <% if user_signed_in? && current_user.id == @item.user_id %>
-          <div class="item__manage">
-            <%= link_to "編集する", edit_item_path, class: :item__btn %>
-            <%= link_to "削除する", item_path(@item.id), method: :delete, class: :item__btn %>
-          </div>
-        <% elsif  user_signed_in? && current_user.id != @item.user_id %>
-          <div class="item__manage">
-            <%= link_to '購入する', item_orders_path(@item.id) ,class: :item__btn %>
-          </div>
+        <% if user_signed_in? %>
+          <% if current_user.id == @item.user_id %>
+            <div class="item__manage">
+              <%= link_to "編集する", edit_item_path, class: :item__btn %>
+              <%= link_to "削除する", item_path(@item.id), method: :delete, class: :item__btn %>
+            </div>
+          <% else %>
+            <% if @item.order.blank? %>
+              <div class="item__manage">
+                <%= link_to '購入する', item_orders_path(@item.id) ,class: :item__btn %>
+              </div>
+            <% elsif @item.order.present? %>
+              <div class="item__manage">
+                <%= "※この作品は売り切れです" %>
+              </div>
+            <% end %>
+          <% end %>
         <% end %>
 
         <div class="item__detail">
