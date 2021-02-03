@@ -70,4 +70,4 @@ gem "aws-sdk-s3", require: false
 
 gem 'rails-i18n'
 
-gem 'pry-rails'
+gem 'payjp'
