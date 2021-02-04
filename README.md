@@ -64,6 +64,9 @@ pass: 123abc </br>
 - ログイン時トップページの表示</br>
 [![Image from Gyazo](https://i.gyazo.com/7533e7370390f304627d0fbf524e5871.gif)](https://gyazo.com/7533e7370390f304627d0fbf524e5871)
 
+- ユーザー詳細ページの表示</br>
+[![Image from Gyazo](https://i.gyazo.com/b78d553b9f4c23e931d4f106fa8f18e0.gif)](https://gyazo.com/b78d553b9f4c23e931d4f106fa8f18e0)
+
 - ログイン済トップページから新規作品投稿画面への遷移</br>
 [![Image from Gyazo](https://i.gyazo.com/c672dcc127cf19baddda3c35038dad20.gif)](https://gyazo.com/c672dcc127cf19baddda3c35038dad20)
 
@@ -76,11 +79,17 @@ pass: 123abc </br>
 - 作品向けコメント投稿機能</br>
 [![Image from Gyazo](https://i.gyazo.com/208e1540f23902d895a87272e0e54d06.gif)](https://gyazo.com/208e1540f23902d895a87272e0e54d06)
 
+- 作品購入ページへの遷移</br>
+[![Image from Gyazo](https://i.gyazo.com/8236986f31b6c62a53eb1f39a3369d9f.gif)](https://gyazo.com/8236986f31b6c62a53eb1f39a3369d9f)
+
+- 作品購入の挙動</br>
+[![Image from Gyazo](https://i.gyazo.com/32328117e511d03e965b050b5c672a65.gif)](https://gyazo.com/32328117e511d03e965b050b5c672a65)
+
+- 販売済み作品詳細の表示</br>
+[![Image from Gyazo](https://i.gyazo.com/c874ec3ceddb9c1f5585ee2c343553bd.gif)](https://gyazo.com/c874ec3ceddb9c1f5585ee2c343553bd)
+
 - トップページの作品ランダム3作品表示</br>
 [![Image from Gyazo](https://i.gyazo.com/ccaa86b906939bb56d0137367bf075b8.gif)](https://gyazo.com/ccaa86b906939bb56d0137367bf075b8)
-
-- ユーザー詳細ページの表示</br>
-[![Image from Gyazo](https://i.gyazo.com/b78d553b9f4c23e931d4f106fa8f18e0.gif)](https://gyazo.com/b78d553b9f4c23e931d4f106fa8f18e0)
 
 - カテゴリ選択から作品をひとつランダム表示</br>
 [![Image from Gyazo](https://i.gyazo.com/8b98fcf63490ebeae97986f8b34ce5fb.gif)](https://gyazo.com/8b98fcf63490ebeae97986f8b34ce5fb)
@@ -93,7 +102,6 @@ pass: 123abc </br>
 </br>
 
 # 実装予定の機能
-- 作品購入機能
 - お気に入り機能
 
 # テーブル設計
