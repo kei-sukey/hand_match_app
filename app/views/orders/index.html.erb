@@ -1,6 +1,6 @@
 <main class="main">
   <div class="inner">
-    <div class="item__wrapper">
+    <div class="order__wrapper">
 
       <h1 class='transaction-title-text'>
         購入内容の確認
@@ -80,7 +80,7 @@
           <div class='form-text-wrap'>
             <label class="form-text">都道府県</label>
           </div>
-          <%= f.collection_select(:prefecture_id, Prefecture.all, :id, :name, {}, {class:"select-box", id:"prefecture"}) %>
+          <%= f.collection_select(:prefecture_id, Prefecture.all, :id, :name, {}, {class:"address-select-box", id:"prefecture"}) %>
         </div>
         <div class="form-group">
           <div class='form-text-wrap'>
@@ -108,8 +108,9 @@
         </div>
       </div>
 
-      <div class='buy-btn'>
-        <%= f.submit "購入" ,class:"buy-blue-btn" %>
+      <div class='buy_btn'>
+        <%= f.submit "購入" ,class:"buy_blue_btn" %>
+        <%=link_to '戻る', item_path(@item.id), class: :buy_blue_btn %>
       </div>
       <% end %>
     </div>

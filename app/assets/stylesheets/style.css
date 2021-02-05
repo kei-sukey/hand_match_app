@@ -450,22 +450,7 @@ a {
   align-items: center;
 }
 
-
 /* 購入ページ */
-.transaction-contents {
-  width: 100vw;
-  background-color: #f5f5f5;
-  display: flex;
-  justify-content: center;
-}
-
-.transaction-main {
-  background-color: #FFF;
-  width: 70vw;
-  min-width: 450px;
-  padding: 10vh 10vw;
-}
-
 .transaction-title-text {
   text-align: center;
   border-bottom: 1px #eee solid;
@@ -476,6 +461,15 @@ a {
 }
 
 /* 購入内容の表示 */
+.order__wrapper{
+  min-height: calc(100vh - 161px);
+  min-width: 450px;
+  width: 70vw;
+  padding: 10vh 10vw;
+  margin-bottom: 30px;
+  border: 1px #eee solid;
+}
+
 .buy-item-info {
   height: 150px;
   border-bottom: 1px #eee solid;
@@ -535,21 +529,28 @@ a {
   font-size: 25px;
 }
 
+.transaction-form-wrap {
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
 /* カード情報の入力 */
 .credit-card-form {
   border-bottom: 1px #eee solid;
-  margin: 15px 100px 0;
-  padding-bottom: 30px;
+  margin: 15px 0 0;
+  padding: 0 100px 30px;
 }
 
 .info-input-haedline {
   text-align: center;
   font-weight: bold;
+  margin-bottom: 10px;
   font-size: 20px;
 }
 
 .input-card-number {
-  width: 26%;
+  width: 80%;
 }
 
 .available-card {
@@ -570,7 +571,7 @@ a {
 }
 
 .input-expiration-date {
-  width: 10%;
+  width: 15%;
   margin-top: 5px;
   height: 24px;
   border-radius: 4px;
@@ -580,35 +581,44 @@ a {
 }
 
 .input-cvc {
-  width: 26%;
+  width: 60%;
 }
 
 /* 配送先の入力 */
 .shipping-address-form {
-  margin: 15px 100px 0;
+  width: 50%;
+  margin: 15px 100px 5px;
 }
 
 .input-address {
-  width: 26%;
+  width: 80%;
 }
 
-.buy-btn {
-  width: 30%;
-  margin: 30px auto 50px;
+.address-select-box {
+  width: 80%;
 }
 
-.buy-blue-btn {
+.buy_btn {
+  width: 40%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.buy_blue_btn {
   width: 100%;
   background: #87CEFA;
   border: 1px #87CEFA solid;
   border-radius: 100px;
+  margin-bottom: 30px;
   color: #fff;
-  line-height: 48px;
+  text-align: center;
+  line-height: 32px;
   font-size: 14px;
   transition: 0.2s ease;
 }
 
-.buy-blue-btn:hover {
+.buy_blue_btn:hover {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
   cursor: pointer;
 }
