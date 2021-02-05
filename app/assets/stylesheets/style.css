@@ -451,6 +451,15 @@ a {
 }
 
 /* 購入ページ */
+.order__wrapper{
+  min-height: calc(100vh - 161px);
+  min-width: 450px;
+  width: 70vw;
+  padding: 10vh 10vw;
+  margin-bottom: 30px;
+  border: 1px #eee solid;
+}
+
 .transaction-title-text {
   text-align: center;
   border-bottom: 1px #eee solid;
@@ -461,15 +470,6 @@ a {
 }
 
 /* 購入内容の表示 */
-.order__wrapper{
-  min-height: calc(100vh - 161px);
-  min-width: 450px;
-  width: 70vw;
-  padding: 10vh 10vw;
-  margin-bottom: 30px;
-  border: 1px #eee solid;
-}
-
 .buy-item-info {
   height: 150px;
   border-bottom: 1px #eee solid;
@@ -677,6 +677,10 @@ flex-direction: column;
     margin-top: 10px;
     object-fit: contain;
   }
+
+  .order__wrapper{
+    min-width: 925px;
+  }
 }
 
  /* スマホ表示 */
@@ -724,11 +728,60 @@ flex-direction: column;
 
   .form__text {
     width: 95%;
-  }  
+  }
   .prev_img {
     height: 80%;
     width: 80%;
     margin-top: 10px;
     object-fit: contain;
+  }
+
+  .order__wrapper{
+    min-width: 340px;
+    padding: 10vh 0;
+  }
+  .transaction-title-text {
+    font-size: 18px;
+  }
+  .buy-item-img {
+    height: 90px;
+    width: 140px;
+  }
+  .buy-item-text {
+    width: 100px;
+    font-size: 15px;
+  }
+  .buy-item-price {
+    flex-direction: column;
+  }
+  .item-price-text {
+    font-size: 15px;
+  }
+  .item-price-sub-text {
+    font-size: 10px;
+  }
+  .item-payment-title {
+    font-size: 18px;
+  }
+  .item-payment-price {
+    font-size: 18px;
+  }
+  .info-input-haedline {
+    font-size: 13px;
+  }
+  .input-card-number {
+    width: 100%;
+  }
+  .input-expiration-date {
+    width: 100%;
+  }
+  .input-cvc {
+    width: 100%;
+  }
+  .input-address {
+    width: 100%;
+  }
+  .address-select-box {
+    width: 100%;
   }
 }
