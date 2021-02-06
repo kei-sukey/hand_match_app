@@ -18,17 +18,17 @@ RSpec.describe Comment, type: :model do
       it 'テキストがないとコメントは保存できない' do
         @comment.text = ""
         @comment.valid?
-        expect(@comment.errors.full_messages).to include("Text can't be blank")
+        expect(@comment.errors.full_messages).to include("本文を入力してください")
       end
       it 'ユーザーが紐付いていないとコメントは保存できない' do
         @comment.user = nil
         @comment.valid?
-        expect(@comment.errors.full_messages).to include("User must exist")
+        expect(@comment.errors.full_messages).to include("ユーザーを入力してください")
       end
       it '作品が紐付いていないとコメントは保存できない' do
         @comment.item = nil
         @comment.valid?
-        expect(@comment.errors.full_messages).to include("Item must exist")
+        expect(@comment.errors.full_messages).to include("作品を入力してください")
       end
     end
   end

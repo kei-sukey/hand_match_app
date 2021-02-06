@@ -22,6 +22,11 @@ ja:
         shipping_day_id: 発送までの日数
         price: 販売価格
 
+      comment:
+        text: 本文
+        user: ユーザー
+        item: 作品
+
   activemodel:
     attributes:
       order_shipping_address:
