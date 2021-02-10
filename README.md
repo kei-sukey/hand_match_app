@@ -80,13 +80,13 @@ pass: 123abc </br>
 [![Image from Gyazo](https://i.gyazo.com/208e1540f23902d895a87272e0e54d06.gif)](https://gyazo.com/208e1540f23902d895a87272e0e54d06)
 
 - 作品購入ページへの遷移</br>
-[![Image from Gyazo](https://i.gyazo.com/8236986f31b6c62a53eb1f39a3369d9f.gif)](https://gyazo.com/8236986f31b6c62a53eb1f39a3369d9f)
+[![Image from Gyazo](https://i.gyazo.com/ac976d8918b66358f3b5d258eeaccf5b.gif)](https://gyazo.com/ac976d8918b66358f3b5d258eeaccf5b)
 
 - 作品購入の挙動</br>
-[![Image from Gyazo](https://i.gyazo.com/32328117e511d03e965b050b5c672a65.gif)](https://gyazo.com/32328117e511d03e965b050b5c672a65)
+[![Image from Gyazo](https://i.gyazo.com/022be31fbbb99904e58d8f35f83349e6.gif)](https://gyazo.com/022be31fbbb99904e58d8f35f83349e6)
 
 - 販売済み作品詳細の表示</br>
-[![Image from Gyazo](https://i.gyazo.com/c874ec3ceddb9c1f5585ee2c343553bd.gif)](https://gyazo.com/c874ec3ceddb9c1f5585ee2c343553bd)
+[![Image from Gyazo](https://i.gyazo.com/46d31906ad6208ac5c54428eb9606931.gif)](https://gyazo.com/46d31906ad6208ac5c54428eb9606931)
 
 - トップページの作品ランダム3作品表示</br>
 [![Image from Gyazo](https://i.gyazo.com/ccaa86b906939bb56d0137367bf075b8.gif)](https://gyazo.com/ccaa86b906939bb56d0137367bf075b8)
