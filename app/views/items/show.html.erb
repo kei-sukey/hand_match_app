@@ -119,13 +119,17 @@
           <% end %>
 
             <ul class="comments_lists">
-              <% if @comments %>
+              <% if @comments.present? %>
                 <% @comments.each do |comment| %>
                   <li class="comments_list">
                     <%=safe_join(comment.text.split("\n"),tag(:br))%>
                     <%= link_to "by #{comment.user.nickname}", user_path(comment.user_id), class: :comment_user %>
                   </li>
                 <% end %>
+              <% else %>
+                <div class="comment-warn">
+                  <%= "コメントは投稿されていません。" %>
+                </div>
               <% end %>
             </ul>
         </div>
