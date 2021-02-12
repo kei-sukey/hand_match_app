@@ -131,8 +131,8 @@
         </div>
 
       <div class="item__detail">
-        <%= link_to '別の作品へ', root_path ,class: :change_item_btn %>
-        <%= link_to "#{@item.category.name}をもっと見る", root_path ,class: :another_item %>
+        <%= link_to "#{@item.category.name}の作品をもっと見る", category_path(@item.category.id) ,class: :another_item %>
+        <%= link_to 'ホームに戻る', root_path ,class: :change_item_btn %>
       </div>
 
     </div>
